@@ -109,10 +109,10 @@ class Body extends StatelessWidget {
                         ),
                         color: kPrimaryColor,
                         onPressed: () {
-                          formKey.currentState?.save();
-                          print("${myCutomer.name}");
-                          print("${myCutomer.farm_name}");
-                          print("${myCutomer.user_name}");
+                          if (formKey.currentState!.validate()) {
+                            formKey.currentState?.save();
+                          }
+
                           //Navigator.push(context,
                           //MaterialPageRoute(builder: (context) => LoginScreen()));
                         },
