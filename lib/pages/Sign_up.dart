@@ -6,18 +6,18 @@ import 'package:flutter_application_1/pages/body_signup.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 class SignUpScreen extends StatelessWidget {
-  final formKey = GlobalKey<FormState>();
+  //final formKey = GlobalKey<FormState>();
   //เตรียม firebase
-  final Future<FirebaseApp> firebase = Firebase.initializeApp();
+  //final Future<FirebaseApp> firebase = Firebase.initializeApp();
 
-  Cutomer myCutomer =
-      Cutomer(name: 'name', farm_name: 'farm_name', user_name: 'user_name');
+  // Cutomer myCutomer =
+  //     Cutomer(name: 'name', farm_name: 'farm_name', user_name: 'user_name');
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Body(
-        key: formKey,
+        //key: formKey,
       ),
     );
   }
